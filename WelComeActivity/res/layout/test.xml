@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/driver_location"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+   	<TextView
+	   android:id="@+id/driver_location_name"
+	   android:layout_width="wrap_content"
+	   android:layout_height="wrap_content"
+	   android:layout_marginLeft="20dp"
+	   android:textColor="#000000" />
+   	<RatingBar
+        android:id="@+id/driver_location_ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        style="@style/roomRatingBar" />
+</LinearLayout>

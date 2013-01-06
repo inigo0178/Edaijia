@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/Gray"
+   >
+	<ScrollView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:scrollbars="none"
+	    >
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:minHeight="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/listbacks" 
+        android:orientation="vertical" >
+
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+		    >
+        <TextView 
+            android:id="@+id/price_title"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:text="@string/title"
+            android:textColor="@color/black"
+            />
+         <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/listview_line"
+            android:contentDescription="TODO"/>
+        </LinearLayout>
+       
+
+
+        <ListView
+            android:id="@+id/price_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#FFFFFF"          
+            android:divider="@drawable/listview_line"
+            android:listSelector="#00000000"
+            android:scrollbars="none" />
+
+        
+    </LinearLayout>
+	<TextView 
+	    android:layout_marginTop="7dp"
+	    	android:layout_marginLeft="15dp"
+	    	android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/price_note"
+            android:textColor="@color/black"
+            />
+	<!-- 关于e代驾 -->
+	<TextView 
+	    android:layout_marginLeft="15dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/about"
+	    android:textColor="@color/black"
+	    android:textSize="20sp"
+	    android:layout_marginBottom="10dp"
+	    />
+	<ListView 
+	    android:divider="@drawable/listview_line"
+        android:layout_width="fill_parent"
+        android:layout_height="154dp"
+        android:cacheColorHint="#FFFFFF"
+        android:id="@+id/about_listview"
+        android:scrollbars="none"
+	    android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/listbackground"   
+	    ></ListView>
+	</LinearLayout>	
+	</ScrollView>
+	<LinearLayout  
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:gravity="center"
+		    android:background="@color/transparent"
+		    android:id="@+id/refresh_view" 
+		    android:visibility="gone">
+    
+	    <ProgressBar 
+	        android:id="@+id/refresh_view_progress"
+	        
+	        android:layout_width="50dp"
+	        android:layout_height="50dp"
+	         />
+	    <TextView
+	        android:layout_marginLeft="10dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/map_string"
+	        android:textColor="@color/black"
+	        android:visibility="gone"
+	        ></TextView>
+		</LinearLayout>
+</FrameLayout>

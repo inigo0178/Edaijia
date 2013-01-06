@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:text="@string/call"
+        android:textColor="@color/whit"
+        android:textSize="20sp" />
+	<Button 
+	    android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/driver_call"
+        android:gravity="center"    
+        android:id="@+id/bt_driver_phone_dailog"
+        android:textColor="@color/whit"
+        android:textSize="18sp"
+	    />
+	<Button 
+	    android:layout_marginTop="10dp"
+	    android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/driver_call"
+        android:id="@+id/bt_400_phone_dailog"
+        android:gravity="center"
+        android:text="@string/phones"
+        android:textColor="@color/whit"
+        android:textSize="18sp"
+	    />
+</LinearLayout>

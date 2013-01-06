@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/Gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:background="@drawable/comment_backgroundbar"
+            android:text="@string/current_city"
+            android:textColor="@color/whit"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/curr_city_name"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:background="@drawable/comment_backgroundbar"
+            android:text="@string/city_list"
+            android:textColor="@color/whit"
+            android:textSize="18sp" />
+
+        <ListView
+            android:id="@+id/city_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="10dp"
+            android:cacheColorHint="@color/Gray"
+            android:divider="@drawable/listview_line" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/refresh_view_progress"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/map_string"
+            android:textColor="@color/black"
+            android:visibility="gone" >
+        </TextView>
+    </LinearLayout>
+
+</FrameLayout>

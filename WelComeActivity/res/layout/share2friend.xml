@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/Gray"
+    android:orientation="vertical"
+    android:paddingTop="10dp" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/share_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="选择推荐方式"
+                android:textColor="#5f7994"
+                android:textSize="20sp" />
+
+            <ListView
+                android:id="@+id/share_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="154dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/listbackground"
+                android:cacheColorHint="#FFFFFF"
+                android:divider="@drawable/listview_line"
+                android:scrollbars="none" >
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

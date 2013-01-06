@@ -1,0 +1,65 @@
+# view AndroidManifest.xml #generated:33
+-keep class cn.edaijia.android.client.EDriverApp { <init>(...); }
+
+# view AndroidManifest.xml #generated:63
+-keep class cn.edaijia.android.client.activity.AccountActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:49
+-keep class cn.edaijia.android.client.activity.BaseActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:98
+-keep class cn.edaijia.android.client.activity.CityListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:78
+-keep class cn.edaijia.android.client.activity.DriverDetails { <init>(...); }
+
+# view AndroidManifest.xml #generated:73
+-keep class cn.edaijia.android.client.activity.DriverListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:93
+-keep class cn.edaijia.android.client.activity.ErrorNetActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:109
+-keep class cn.edaijia.android.client.activity.FavorableActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:83
+-keep class cn.edaijia.android.client.activity.GuideView { <init>(...); }
+
+# view AndroidManifest.xml #generated:54
+-keep class cn.edaijia.android.client.activity.HomeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:103
+-keep class cn.edaijia.android.client.activity.InsureActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:68
+-keep class cn.edaijia.android.client.activity.PriceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:88
+-keep class cn.edaijia.android.client.activity.Share2Friend { <init>(...); }
+
+# view AndroidManifest.xml #generated:117
+-keep class cn.edaijia.android.client.activity.SinaWeiboActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:37
+-keep class cn.edaijia.android.client.activity.WelComeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:59
+-keep class cn.edaijia.android.client.maps.EDriverMapActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:148
+-keep class cn.edaijia.android.client.receiver.NetworkReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:125
+-keep class cn.edaijia.android.client.service.EDService { <init>(...); }
+
+# view res/layout/driver_nearby.xml #generated:8
+# view res/layout/driverdetails.xml #generated:257
+# view res/layout/my_driverlist.xml #generated:8
+-keep class cn.edaijia.android.client.util.MyListView { <init>(...); }
+
+# view AndroidManifest.xml #generated:136
+-keep class com.baidu.location.f { <init>(...); }
+
+# view res/layout/map.xml #generated:7
+-keep class com.baidu.mapapi.MapView { <init>(...); }
+

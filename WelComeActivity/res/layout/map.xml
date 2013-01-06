@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.baidu.mapapi.MapView
+        android:id="@+id/bmapsView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <LinearLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/load"
+        android:gravity="center" >
+
+        <ProgressBar
+            android:id="@+id/refresh_view_progress"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:text="@string/map_string"
+            android:textColor="@color/whit" >
+        </TextView>
+    </LinearLayout>
+    
+    <!-- Locate Button -->
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ImageView
+	        android:id="@+id/map_loc"
+	        android:layout_width="45dp"
+	        android:layout_height="45dp"
+	        android:src="@drawable/search_locate_button"
+	        android:layout_alignParentBottom="true"
+	        android:layout_margin="10dp"/>
+    </RelativeLayout>
+</FrameLayout>

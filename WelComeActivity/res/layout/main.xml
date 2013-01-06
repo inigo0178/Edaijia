@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_bar" />
+
+    <ViewFlipper
+        android:id="@+id/homeview_control"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.00"
+        android:background="#ffffffff"
+        android:focusableInTouchMode="false"
+        android:scrollbars="none" >
+    </ViewFlipper>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/tabbar_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            style="@style/main_tab_bottom"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button1"
+            android:checked="true"
+             >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            style="@style/main_tab_bottom"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button2"
+             >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            style="@style/main_tab_bottom"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button3"
+             >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            style="@style/main_tab_bottom"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button4"
+             >
+        </RadioButton>
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,422 @@
+android.annotation.SuppressLint
+android.annotation.TargetApi
+cn.edaijia.android.client.AppInfo:
+    public static final java.lang.String CHANNEL_HOMEPAGE
+    public static final int KEY_BASE_URL
+    public static final int KEY_MD5
+    public static final int KEY_WEIBO_KEY
+    public static final int KEY_WEIBO_SECRET
+    public static final int KEY_WEIBO_URL
+    public static final int KEY_BAIDU_MAP_KEY
+    public static final java.lang.String REQUEST_ERROR
+    public static final java.lang.String REQUEST_SUCCESS
+    public static final int RESPONSE_ERROR
+    public static final int RESPONSE_SUCCESS
+    public static final int THREADPOOL_SIZE
+    public static final int APP_KEY
+    public static final int FLING_MIN_DISTANCE
+    public static final int FLING_MIN_VELOCITY
+    public static final java.lang.String PRE_STATE
+    public static final java.lang.String PARAMS_MAC_ADDRESS
+    public static final java.lang.String PHONE_NUMBER_400
+    6:6:public AppInfo()
+    108:108:public static java.lang.String getWeiboSecret()
+cn.edaijia.android.client.BuildConfig
+cn.edaijia.android.client.EDriverApp:
+    private static final int REQUEST_TIMEOUT
+    private static final int SO_TIMEOUT
+    309:310:public void setmBMapMan(com.baidu.mapapi.BMapManager)
+cn.edaijia.android.client.Manifest
+cn.edaijia.android.client.Manifest$permission
+cn.edaijia.android.client.R
+cn.edaijia.android.client.R$anim
+cn.edaijia.android.client.R$attr
+cn.edaijia.android.client.R$color
+cn.edaijia.android.client.R$dimen
+cn.edaijia.android.client.R$drawable
+cn.edaijia.android.client.R$id
+cn.edaijia.android.client.R$layout
+cn.edaijia.android.client.R$string
+cn.edaijia.android.client.R$style
+cn.edaijia.android.client.R$update_id
+cn.edaijia.android.client.activity.CityListActivity:
+    private static final int REFRESH_SUC
+    private static final int REFRESH_FAIL
+cn.edaijia.android.client.activity.DriverDetails:
+    private static final int MSG_UPDATE_DRIVER_STATE
+    private static final int MSG_NO_COMMENTS
+    private static final int MSG_UPDATE_DRIVER_COMMENTS
+    private static final int MSG_NO_MORE_COMMENTS
+cn.edaijia.android.client.activity.DriverListActivity:
+    public android.app.LocalActivityManager localActivityManager
+    private static final int MSG_LOAD_SUCC
+    private static final int MSG_LOAD_FAILED
+    private static final int MSG_SHOW_WAITING
+cn.edaijia.android.client.activity.FavorableActivity:
+    private static final int EDIT_NULL
+    private static final int PHONE_ERROR
+    private static final int SUBMIT_SCESS
+    private static final int SUBMIT_WRONG
+cn.edaijia.android.client.activity.PriceActivity:
+    private static final java.lang.String KEY_GOT_CITY_NAME
+cn.edaijia.android.client.db.DBDao
+cn.edaijia.android.client.db.DBManager:
+    private static final java.lang.String DB_FILE_NAME
+    private static final java.lang.String TABLE_CALL_LOG
+    private static final java.lang.String TABLE_APP_CONTENT
+    private static final java.lang.String TABLE_MY_DRIVER_LIST
+    141:156:public static boolean clearPhoneInfo()
+    222:249:public static java.util.List getFailedInfo()
+cn.edaijia.android.client.db.UploadInfo:
+    35:35:public java.lang.String getResolution()
+cn.edaijia.android.client.maps.DriverOverlay:
+    android.graphics.drawable.Drawable marker
+    130:132:public void addOverlayItem(com.baidu.mapapi.OverlayItem)
+cn.edaijia.android.client.maps.DriverRecord:
+    private java.lang.String addr
+    private java.lang.String updateTime
+    78:78:public java.lang.String getSort()
+    83:84:public void setSort(java.lang.String)
+    96:96:public java.lang.String getDriver_id()
+    108:108:public java.lang.String getId()
+    132:132:public java.lang.String getIdCard()
+    148:148:public java.lang.String getCard()
+    196:196:public java.lang.String getPic_middle()
+    204:204:public java.lang.String getPic_large()
+    220:220:public java.lang.String getComment_count()
+    244:244:public java.lang.String getAddr()
+    248:249:public void setAddr(java.lang.String)
+    252:252:public java.lang.String getUpdateTime()
+    256:257:public void setUpdateTime(java.lang.String)
+    264:264:public java.lang.String getPrice()
+cn.edaijia.android.client.maps.EDriverMapActivity:
+    private static final int MSG_LOAD_SUCC
+    private static final int MSG_LOCATE_ERROR
+    private static final int MSG_NO_DATA
+    private static final int MSG_LOAD_FAILED
+    private static final int MSG_SHOW_WAITING
+    private static final int MSG_HIDE_WAITING
+    214:231:private void updateDriverList(android.content.Intent)
+cn.edaijia.android.client.maps.LocManager:
+    121:122:public void startLocService()
+    143:143:public java.lang.String getAddr()
+cn.edaijia.android.client.maps.MapConstants
+cn.edaijia.android.client.model.AppContentInfo:
+    49:49:public java.lang.String getRecommendText()
+    69:70:public void setRechargeText(java.lang.String)
+cn.edaijia.android.client.model.DriverInfo:
+    private java.lang.String phone
+    private java.lang.String mark
+    19:19:public java.lang.String getPhone()
+    22:23:public void setPhone(java.lang.String)
+    31:31:public java.lang.String getMark()
+    34:35:public void setMark(java.lang.String)
+    37:37:public java.lang.String getDriverID()
+    43:43:public java.lang.String getPicture()
+    49:49:public java.lang.String getName()
+    55:55:public java.lang.String getLevel()
+    61:61:public java.lang.String getCarCard()
+    67:67:public java.lang.String getYear()
+    73:73:public java.lang.String getServiceTimes()
+    79:79:public java.lang.String getHighOpinionTimes()
+    85:85:public java.lang.String getLowOpinionTimes()
+cn.edaijia.android.client.model.PriceInfo:
+    28:28:public java.lang.String getExpireAt()
+cn.edaijia.android.client.model.ReviewInfo:
+    14:14:public java.lang.String getStatus()
+    50:50:public java.lang.String getUuid()
+cn.edaijia.android.client.receiver.NetworkReceiver:
+    private static final java.lang.String NETWORK_KACTION
+cn.edaijia.android.client.service.EDService:
+    public static final java.lang.String ACTION_UPDATE
+    public static final java.lang.String ACTION_UPLOAD_CALL_LOG
+    public static final java.lang.String ACTION_UPDATE_MACADDRESS
+    static final int toast
+    static final int nothing
+    static final int suc
+    static final int refresh
+    static final int fail
+cn.edaijia.android.client.util.AuthDialogListener$1:
+    50:57:public void onIOException(java.io.IOException)
+cn.edaijia.android.client.util.AuthDialogListener$1$1
+cn.edaijia.android.client.util.CommonHttp:
+    31:31:public CommonHttp()
+    98:118:public static java.lang.String getReviewInfo(java.lang.String,java.lang.String,org.apache.http.client.HttpClient)
+cn.edaijia.android.client.util.EDHttpPost:
+    19:20:public EDHttpPost(java.lang.String)
+cn.edaijia.android.client.util.FileUtils:
+    11:11:public FileUtils()
+cn.edaijia.android.client.util.Logger:
+    36:39:public void w(java.lang.String)
+    42:45:public void w(java.lang.String,java.lang.Throwable)
+    48:51:public void i(java.lang.String)
+    54:57:public void i(java.lang.String,java.lang.Throwable)
+    66:69:public void d(java.lang.String,java.lang.Throwable)
+    78:81:public void v(java.lang.String,java.lang.Throwable)
+cn.edaijia.android.client.util.MD5:
+    10:10:public MD5()
+cn.edaijia.android.client.util.MyListView:
+    private static final int RELEASE_To_REFRESH
+    private static final int PULL_To_REFRESH
+    private static final int REFRESHING
+    private static final int DONE
+    private static final int LOADING
+    private static final int RATIO
+cn.edaijia.android.client.util.TimeUtil:
+    8:8:public TimeUtil()
+    24:30:public static java.lang.String getHourTime(long)
+    38:41:public java.lang.String getReminderTime(long)
+    49:51:public java.lang.String getEmpox10TimeStr(long)
+    58:60:public java.lang.String getEmpox10TimeStrMessage(long)
+    64:66:public java.lang.String getInformationDateFormat(long)
+    86:94:public static long getMillisFrom12Str(java.lang.String)
+    140:142:public static java.lang.String getcurrentTimebylong()
+    147:149:public static java.lang.String getcurrentTime()
+    162:164:public static java.lang.String getTimeHm(long)
+cn.edaijia.android.client.util.UtilListData:
+    107:150:public java.util.ArrayList getDataReviewInfo(int,int)
+cn.edaijia.android.client.util.Utils:
+    private static final java.lang.String ENCODING_UTF8
+    private static final java.lang.String FILE_NAME
+    private static final java.lang.String PICTURE
+    63:63:public Utils()
+    113:122:public static void save(java.lang.String,android.content.Context)
+    164:171:public static byte[] compress(java.lang.String)
+    181:190:public static void writePathLog(java.lang.String,byte[])
+    198:204:public static boolean deletePathLog(java.lang.String)
+    213:213:public static java.lang.String getUUID()
+    224:244:public static byte[] getUTF8Bytes(java.lang.String)
+    262:265:public static java.lang.String replace(java.lang.String,java.lang.String,java.lang.String)
+    276:279:public static android.graphics.drawable.Drawable bitmapToDrawable(android.graphics.Bitmap)
+    290:294:public static android.graphics.Bitmap createBitmap(byte[])
+    304:309:public static byte[] getBytesFromBitmap(android.graphics.Bitmap)
+    322:333:public static boolean isEqual(byte[],byte[])
+    352:357:public static boolean isSdcardReadable()
+    364:374:public static java.util.HashMap parserUri(android.net.Uri)
+    379:379:public static int toInt(double)
+    385:390:public static java.util.List formatSequence(java.lang.String[])
+    421:426:public static boolean isErrorLoc(double,double)
+    487:492:public static android.graphics.Bitmap View2Bitmap(android.view.View)
+com.sina.sso.RemoteSSO
+com.sina.sso.RemoteSSO$Stub
+com.sina.sso.RemoteSSO$Stub$Proxy
+com.weibo.sdk.android.Manifest
+com.weibo.sdk.android.Manifest$permission
+com.weibo.sdk.android.Oauth2AccessToken:
+    31:44:public Oauth2AccessToken(java.lang.String)
+com.weibo.sdk.android.R:
+    10:10:public R()
+com.weibo.sdk.android.R$anim
+com.weibo.sdk.android.R$attr
+com.weibo.sdk.android.R$color
+com.weibo.sdk.android.R$dimen:
+    public static final int bottom_tab_font_size
+    public static final int bottom_tab_padding_drawable
+    public static final int bottom_tab_padding_up
+    31:31:public R$dimen()
+com.weibo.sdk.android.R$drawable:
+    public static final int arrow
+    public static final int available
+    public static final int available_pressed
+    public static final int back
+    public static final int back_normal
+    public static final int back_selected
+    public static final int btn_call_drivers
+    public static final int btn_driver_list
+    public static final int btn_map
+    public static final int btn_my_history_call_driver
+    public static final int button1
+    public static final int button2
+    public static final int button3
+    public static final int button4
+    public static final int button_list
+    public static final int button_list_active
+    public static final int button_map
+    public static final int button_map_active
+    public static final int button_price
+    public static final int button_price_1
+    public static final int button_price_active
+    public static final int button_price_active_1
+    public static final int call_default
+    public static final int call_pess
+    public static final int car
+    public static final int comment_backgroundbar
+    public static final int default_driver
+    public static final int design_intro1_1
+    public static final int design_intro2_1
+    public static final int design_intro3_1
+    public static final int dot
+    public static final int dot_1
+    public static final int dot_2
+    public static final int driver_call
+    public static final int error_call
+    public static final int error_call_press
+    public static final int error_calls
+    public static final int go
+    public static final int history_cell_call
+    public static final int history_cell_call_pressed
+    public static final int ic_launcher
+    public static final int listbackground
+    public static final int listbacks
+    public static final int listview_line
+    public static final int navigationbar_background
+    public static final int relocation
+    public static final int relocation_press
+    public static final int relocations
+    public static final int room_rating_bar
+    public static final int sanjiao
+    public static final int sanjiao_1
+    public static final int search_annotation_green
+    public static final int search_annotation_red
+    public static final int search_cell_avatar_shadow
+    public static final int search_locate_button
+    public static final int search_locate_button_dis
+    public static final int search_locate_button_normal
+    public static final int search_locate_button_pressed
+    public static final int share_back
+    public static final int star_gold
+    public static final int star_silver
+    public static final int submint
+    public static final int tabbar_1
+    public static final int tabbar_1s
+    public static final int tabbar_2
+    public static final int tabbar_2s
+    public static final int tabbar_3
+    public static final int tabbar_3s
+    public static final int tabbar_4
+    public static final int tabbar_4s
+    public static final int tabbar_background
+    public static final int weibo
+    public static final int welcome
+    public static final int working
+    public static final int workings
+    public static final int workoff
+    40:40:public R$drawable()
+com.weibo.sdk.android.R$id
+com.weibo.sdk.android.R$layout
+com.weibo.sdk.android.R$string
+com.weibo.sdk.android.R$style
+com.weibo.sdk.android.R$update_id
+com.weibo.sdk.android.Weibo:
+    private static final java.lang.String WEIBO_SDK_VERSION
+    public static final java.lang.String KEY_TOKEN
+    public static final java.lang.String KEY_EXPIRES
+    public static final java.lang.String KEY_REFRESHTOKEN
+    54:56:public void setupConsumerConfig(java.lang.String,java.lang.String)
+com.weibo.sdk.android.WeiboDialog:
+    private static final java.lang.String TAG
+com.weibo.sdk.android.WeiboDialogError:
+    private static final long serialVersionUID
+    22:22:int getErrorCode()
+    29:29:java.lang.String getFailingUrl()
+com.weibo.sdk.android.WeiboException:
+    private static final long serialVersionUID
+    28:29:public WeiboException(java.lang.String,java.lang.Exception)
+    32:34:public WeiboException(java.lang.String,java.lang.Exception,int)
+    37:37:public int getStatusCode()
+    46:47:public WeiboException(java.lang.String,java.lang.Throwable)
+    50:51:public WeiboException(java.lang.Throwable)
+    54:56:public WeiboException(int)
+    59:60:public void setStatusCode(int)
+com.weibo.sdk.android.WeiboParameters:
+    34:36:public void add(java.lang.String,int)
+    38:40:public void add(java.lang.String,long)
+    52:57:public void remove(int)
+    104:108:public void addAll(com.weibo.sdk.android.WeiboParameters)
+    111:113:public void clear()
+com.weibo.sdk.android.api.AccountAPI
+com.weibo.sdk.android.api.ActivityInvokeAPI
+com.weibo.sdk.android.api.CommentsAPI
+com.weibo.sdk.android.api.CommonAPI
+com.weibo.sdk.android.api.FavoritesAPI
+com.weibo.sdk.android.api.FriendshipsAPI
+com.weibo.sdk.android.api.PlaceAPI
+com.weibo.sdk.android.api.RegisterAPI
+com.weibo.sdk.android.api.SearchAPI
+com.weibo.sdk.android.api.ShortUrlAPI
+com.weibo.sdk.android.api.StatusesAPI:
+    private static final java.lang.String SERVER_URL_PRIX
+    30:39:public void publicTimeline(int,int,boolean,com.weibo.sdk.android.net.RequestListener)
+    55:72:public void friendsTimeline(long,long,int,int,boolean,com.weibo.sdk.android.api.WeiboAPI$FEATURE,boolean,com.weibo.sdk.android.net.RequestListener)
+    84:96:public void friendsTimelineIds(long,long,int,int,boolean,com.weibo.sdk.android.api.WeiboAPI$FEATURE,com.weibo.sdk.android.net.RequestListener)
+    112:129:public void homeTimeline(long,long,int,int,boolean,com.weibo.sdk.android.api.WeiboAPI$FEATURE,boolean,com.weibo.sdk.android.net.RequestListener)
+    146:164:public void userTimeline(long,long,long,int,int,boolean,com.weibo.sdk.android.api.WeiboAPI$FEATURE,boolean,com.weibo.sdk.android.net.RequestListener)
+    181:199:public void userTimeline(java.lang.String,long,long,int,int,boolean,com.weibo.sdk.android.api.WeiboAPI$FEATURE,boolean,com.weibo.sdk.android.net.RequestListener)
+    216:233:public void userTimeline(long,long,int,int,boolean,com.weibo.sdk.android.api.WeiboAPI$FEATURE,boolean,com.weibo.sdk.android.net.RequestListener)
+    249:263:public void userTimelineIds(long,long,long,int,int,boolean,com.weibo.sdk.android.api.WeiboAPI$FEATURE,com.weibo.sdk.android.net.RequestListener)
+    279:293:public void userTimelineIds(java.lang.String,long,long,int,int,boolean,com.weibo.sdk.android.api.WeiboAPI$FEATURE,com.weibo.sdk.android.net.RequestListener)
+    308:316:public void repostTimeline(long,long,long,int,int,com.weibo.sdk.android.api.WeiboAPI$AUTHOR_FILTER,com.weibo.sdk.android.net.RequestListener)
+    331:340:public void repostTimelineIds(long,long,long,int,int,com.weibo.sdk.android.api.WeiboAPI$AUTHOR_FILTER,com.weibo.sdk.android.net.RequestListener)
+    353:359:public void repostByMe(long,long,int,int,com.weibo.sdk.android.net.RequestListener)
+    377:391:public void mentions(long,long,int,int,com.weibo.sdk.android.api.WeiboAPI$AUTHOR_FILTER,com.weibo.sdk.android.api.WeiboAPI$SRC_FILTER,com.weibo.sdk.android.api.WeiboAPI$TYPE_FILTER,boolean,com.weibo.sdk.android.net.RequestListener)
+    408:417:public void mentionsIds(long,long,int,int,com.weibo.sdk.android.api.WeiboAPI$AUTHOR_FILTER,com.weibo.sdk.android.api.WeiboAPI$SRC_FILTER,com.weibo.sdk.android.api.WeiboAPI$TYPE_FILTER,com.weibo.sdk.android.net.RequestListener)
+    434:452:public void bilateralTimeline(long,long,int,int,boolean,com.weibo.sdk.android.api.WeiboAPI$FEATURE,boolean,com.weibo.sdk.android.net.RequestListener)
+    461:464:public void show(long,com.weibo.sdk.android.net.RequestListener)
+    474:489:public void queryMID(long[],com.weibo.sdk.android.api.WeiboAPI$TYPE,com.weibo.sdk.android.net.RequestListener)
+    502:529:public void queryID(java.lang.String[],com.weibo.sdk.android.api.WeiboAPI$TYPE,boolean,boolean,com.weibo.sdk.android.net.RequestListener)
+    539:547:public void hotRepostDaily(int,boolean,com.weibo.sdk.android.net.RequestListener)
+    557:566:public void hotRepostWeekly(int,boolean,com.weibo.sdk.android.net.RequestListener)
+    576:585:public void hotCommentsDaily(int,boolean,com.weibo.sdk.android.net.RequestListener)
+    595:604:public void hotCommentsWeekly(int,boolean,com.weibo.sdk.android.net.RequestListener)
+    613:621:public void count(java.lang.String[],com.weibo.sdk.android.net.RequestListener)
+    633:638:public void repost(long,java.lang.String,com.weibo.sdk.android.api.WeiboAPI$COMMENTS_TYPE,com.weibo.sdk.android.net.RequestListener)
+    647:650:public void destroy(long,com.weibo.sdk.android.net.RequestListener)
+    661:670:public void update(java.lang.String,java.lang.String,java.lang.String,com.weibo.sdk.android.net.RequestListener)
+    706:716:public void uploadUrlText(java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.weibo.sdk.android.net.RequestListener)
+    726:730:public void emotions(com.weibo.sdk.android.api.WeiboAPI$EMOTION_TYPE,com.weibo.sdk.android.api.WeiboAPI$LANGUAGE,com.weibo.sdk.android.net.RequestListener)
+com.weibo.sdk.android.api.SuggestionsAPI
+com.weibo.sdk.android.api.TagsAPI
+com.weibo.sdk.android.api.TrendsAPI
+com.weibo.sdk.android.api.UsersAPI
+com.weibo.sdk.android.api.WeiboAPI:
+    public static final java.lang.String API_SERVER
+    public static final java.lang.String HTTPMETHOD_POST
+    public static final java.lang.String HTTPMETHOD_GET
+com.weibo.sdk.android.api.WeiboAPI$AUTHOR_FILTER
+com.weibo.sdk.android.api.WeiboAPI$CAPITAL
+com.weibo.sdk.android.api.WeiboAPI$COMMENTS_TYPE
+com.weibo.sdk.android.api.WeiboAPI$COUNT_TYPE
+com.weibo.sdk.android.api.WeiboAPI$EMOTION_TYPE
+com.weibo.sdk.android.api.WeiboAPI$FEATURE
+com.weibo.sdk.android.api.WeiboAPI$FRIEND_TYPE
+com.weibo.sdk.android.api.WeiboAPI$LANGUAGE
+com.weibo.sdk.android.api.WeiboAPI$RANGE
+com.weibo.sdk.android.api.WeiboAPI$SCHOOL_TYPE
+com.weibo.sdk.android.api.WeiboAPI$SORT
+com.weibo.sdk.android.api.WeiboAPI$SORT2
+com.weibo.sdk.android.api.WeiboAPI$SORT3
+com.weibo.sdk.android.api.WeiboAPI$SRC_FILTER
+com.weibo.sdk.android.api.WeiboAPI$STATUSES_TYPE
+com.weibo.sdk.android.api.WeiboAPI$TYPE
+com.weibo.sdk.android.api.WeiboAPI$TYPE_FILTER
+com.weibo.sdk.android.api.WeiboAPI$USER_CATEGORY
+com.weibo.sdk.android.net.AsyncWeiboRunner:
+    10:10:public AsyncWeiboRunner()
+com.weibo.sdk.android.net.HttpManager:
+    private static final java.lang.String MULTIPART_FORM_DATA
+    private static final java.lang.String HTTPMETHOD_POST
+    public static final java.lang.String HTTPMETHOD_GET
+    private static final int SET_CONNECTION_TIMEOUT
+    private static final int SET_SOCKET_TIMEOUT
+    62:62:public HttpManager()
+com.weibo.sdk.android.net.NetStateManager:
+    18:18:public NetStateManager()
+com.weibo.sdk.android.net.NetStateManager$NetStateReceive:
+    final synthetic com.weibo.sdk.android.net.NetStateManager this$0
+    27:27:public NetStateManager$NetStateReceive(com.weibo.sdk.android.net.NetStateManager)
+com.weibo.sdk.android.net.RequestListener:
+    public abstract void onIOException(java.io.IOException)
+com.weibo.sdk.android.sso.SsoHandler
+com.weibo.sdk.android.sso.SsoHandler$1
+com.weibo.sdk.android.util.BitmapHelper:
+    13:13:public BitmapHelper()
+    22:27:public static boolean makesureSizeNotTooLarge(android.graphics.Rect)
+    31:33:public static int getSampleSizeOfNotTooLarge(android.graphics.Rect)
+    46:54:public static int getSampleSizeAutoFitToScreen(int,int,int,int)
+    64:64:public static boolean verifyBitmap(byte[])
+com.weibo.sdk.android.util.Utility:
+    30:30:public Utility()
+    125:146:public static java.lang.String encodeBase62(byte[])
+    154:176:public static byte[] decodeBase62(java.lang.String)
+com.weibo.sdk.android.util.Utility$UploadImageUtils:
+    311:311:public Utility$UploadImageUtils()

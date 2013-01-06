@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="101dp"
+    android:orientation="horizontal" >
+
+    <!-- 头像 -->
+    <ImageView
+        android:id="@+id/nearby_image"
+        android:layout_width="72dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/search_cell_avatar_shadow"
+        android:contentDescription="TODO"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:src="@drawable/default_driver" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <!-- 姓名 -->
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nb_name"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/nearby_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <!-- 状态 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/nearby_state"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="空闲中"
+                    android:textColor="@color/yellow"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <!-- 评分等级 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RatingBar
+                    android:id="@+id/star"
+                    style="@style/roomRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:isIndicator="true"
+                    android:numStars="5" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/distance"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/ny_distance"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="1.1公里"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+            <!-- 代驾次数 -->
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nb_count"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/ney_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="217"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+			<!-- 驾龄 -->
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nb_year"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/ny_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="29年"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+            <!-- 籍贯 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nb_domicile"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/ney_domicile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="北京"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+            
+            
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:src="@drawable/go"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp" >
+    </ImageView>
+
+</LinearLayout>

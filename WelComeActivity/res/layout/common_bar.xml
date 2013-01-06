@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/common_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/navigationbar_background"
+    android:orientation="horizontal" >
+
+    <!-- 返回 取消 
+
+    <LinearLayout
+        android:id="@+id/linear_back"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:text="@string/common_cancle"
+            android:textColor="@color/whit" />
+    </LinearLayout>-->
+    <!-- 地图 列表 -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/linear_map"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/driver_bt"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_driver_list"
+                android:gravity="center"
+                android:text="@string/bt_cont"
+                android:textColor="@color/whit" />
+
+            <Button
+                android:id="@+id/map_bt"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_map"
+                android:gravity="center"
+                android:text="@string/bt_map"
+                android:textColor="@color/whit" />
+        </LinearLayout>
+
+        <!-- title -->
+
+        <LinearLayout
+            android:id="@+id/linear_title"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/whit"
+                android:textSize="20sp" />
+            <!-- 城市 -->
+
+            <Button
+                android:id="@+id/titie_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="2dp"
+                android:background="@null"
+                android:text="@string/cityname"
+                android:textColor="@color/whit"
+                android:visibility="gone" />
+            <!-- 城市三角 -->
+
+            <Button
+                android:id="@+id/titit_san"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/sanjiao_1"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 优惠劵 -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/title_favorable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/submint"
+            android:text="@string/favorable"
+            android:textColor="@color/whit"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>
